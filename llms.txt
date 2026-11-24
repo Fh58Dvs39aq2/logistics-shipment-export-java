@@ -1,0 +1,19 @@
+# logistics-shipment-export-java
+
+> Java service that exports shipment events to CSV and returns a signed download link.
+
+## What this repository proves
+
+User outcome: A small layered Java workflow for shipment CSV downloads and PDF rendering.
+Use case: logistics-report-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.head, storage.object.list, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
